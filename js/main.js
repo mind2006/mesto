@@ -8,26 +8,23 @@ let profileInputName = document.querySelector('.form__input_el_title');
 let profileInputSubName = document.querySelector('.form__input_el_subtitle');
 
 function popupOpened(){
-  popupWindow.classList.add('popup__opened');
+  popupWindow.classList.add('popup_opened');
 }
 
 function popupClosed(){
-  popupWindow.classList.remove('popup__opened');
+  popupWindow.classList.remove('popup_opened');
 }
 
 function profileEdit(){
-  profileInputName.value 		= profileUser.textContent;
+  profileInputName.value = profileUser.textContent;
   profileInputSubName.value = profileDescription.textContent;
-
 	popupOpened();
 }
 
 function handleFormSubmit(evt){
   evt.preventDefault();
-
 	profileUser.textContent 			 = profileInputName.value;
   profileDescription.textContent = profileInputSubName.value;
-
 	popupClosed();
 }
 
