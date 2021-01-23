@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-@media screen and (max-width: 623px) {
+@media screen and (max-width: 705px) {
   .form__input-container {
     margin: 0 0 15px;
   }
